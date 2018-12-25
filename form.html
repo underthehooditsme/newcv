@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>FORMS</title>
+</head>
+
+<body>
+  <form action="mailto:subhamthirani@gmail.com" method="post" enctype="plain/text">
+    <div>
+      <label>NAME:</label>
+      <input type="text" name="name" value="enter your name only" />
+    </div>
+    <div>
+      <div>
+        <label>YOU ARE:</label>
+        <select>
+          <optgroup label="VITIAN">
+            <option>STUDENT</option>
+            <option selected>FACULTY</option>
+            <option>MANAGEMENT</option>
+          </optgroup>
+          <optgroup label=" NON-VITIAN">
+            <option>STUDENT</option>
+            <option selected>FACULTY</option>
+            <option>MANAGEMENT</option>
+          </optgroup>
+
+        </select>
+        <div>
+          <label>What's your favorite COLOUR?</label>
+          <input type="text" name="colour">
+          <datalist>
+            <option>red</option>
+            <option>yellow</option>
+            <option>blue</option>
+            <option>green</option>
+
+          </datalist>
+        </div>
+        <div>
+          <label>DATE TIME:</label>
+          <input type="datetime-local" min="1996-10-10" max="2018-12-31" name="time">
+        </div>
+        <div>
+
+          <label>choose preffered colour for shirt</label>
+          <input type="color">
+        </div>
+        <div>
+
+          <label>no of years in vit</label>
+          <input type="number" min="1" max="7" step="2" name="no of years in vit"/>
+        </div>
+        <div>
+
+          <fieldset>
+            <legend>What is your favorite subject?</legend>
+            <ul>
+              <li>
+                <label>MATHS</label>
+                <input type="radio">
+              </li>
+              <li>
+                <label>SCIENCE</label>
+                <input type="radio">
+              </li>
+              <li>
+                <label for="pizza">ARTS</label>
+                <input type="radio">
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <div>
+          <label>EMAIL ADDRESS</label>
+          <input type="email" value="your_name@gmail.com" name="subject">
+        </div>
+        <div>
+          <label>Password:</label>
+          <input type="password">
+        </div>
+        <div>
+          <label>SUGGESTIONS-</label><br />
+          <textarea row="50" column="100">ANY SUGGESTIONS</textarea>
+        </div>
+        <div>
+
+          <label>CHOOSE YOUR FILE</label>
+          <input type="file" name="file"/>
+        </div>
+        <div>
+
+          <progress max="100" value="90">75/100</progress>
+        </div>
+        <div>
+
+          <meter min="0" max="100" value="50" low="33" high="66" optimum="50">50</meter>
+        </div>
+        <div>
+          <button type="submit" >submit</button><br />
+          <input type="submit" />
+          <button type="refresh">refresh</button>
+        </div>
+  </form>
+
+</body>
+
+</html>
